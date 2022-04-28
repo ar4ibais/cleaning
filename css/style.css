@@ -58,6 +58,7 @@ body {
   line-height: 30px;
   color: #6E7191;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -73,6 +74,7 @@ body {
 .header__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__info {
@@ -124,6 +126,10 @@ body {
   margin-left: 24px;
 }
 
+.header__button {
+  display: none;
+}
+
 .hero,
 .service,
 .professionals,
@@ -132,6 +138,10 @@ body {
 .blog,
 .contacts {
   margin-bottom: 200px;
+}
+
+.hero img {
+  object-fit: cover;
 }
 
 .hero__inner {
@@ -329,6 +339,7 @@ body {
   align-items: center;
   background-image: url(../images/video-bg.jpg);
   background-repeat: no-repeat;
+  background-size: contain;
   width: 1012px;
   height: 570px;
   opacity: .5;
@@ -747,4 +758,235 @@ body {
 .footer__bottom-link {
   text-decoration: underline;
   color: #0075FF;
+}
+
+
+
+
+@media(max-width: 1400px) {
+  .hero img {
+    width: 500px;
+    height: 700px;
+  }
+  .covid img {
+    width: 500px;
+    height: 720px;
+  }
+}
+
+@media(max-width: 1250px) {
+  .covid__title {
+    font-size: 40px;
+  }
+  .covid__contacts {
+    display: block;
+  }
+  .covid__phone {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+
+@media(max-width: 1150px) {
+  .hero__title {
+    font-size: 58px;
+    line-height: 64px;
+  }
+  .phone__link {
+    font-size: 20px;
+  }
+  .hero__phone::before {
+    top: -8px;
+    left: 0;
+  }
+  .video__image {
+    width: 700px;
+  }
+  .video__link {
+    transform: translateY(-18%);
+  }
+  .video {
+    padding: 100px 0;
+  }
+  .covid img {
+    width: 400px;
+    height: 720px;
+  } 
+}
+
+@media(max-width: 992px) {
+  .header__content {
+    display: none;
+  }
+  .header__button {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+  }
+  .header__button div {
+    width: 40px;
+    height: 2px;
+    background-color: #211F54;
+    border-radius: 2px; 
+    margin-bottom: 10px;
+  }
+  .menu__list {
+    display: block;
+  }
+  .menu {
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: -300px; 
+    transition: all .3s;
+  }
+  .menu--active {
+    top: 30px;
+  }
+  .menu__item + .menu__item {
+    margin-left: 0;
+  }
+  .hero,
+  .service,
+  .professionals,
+  .covid,
+  .home,
+  .blog,
+  .contacts {
+    margin-bottom: 100px;
+  }
+  .hero img {
+    display: none;
+  }
+  .hero__info {
+    padding: 70px 0;
+  }
+  .service__inner {
+    flex-wrap: wrap;
+  }
+  .service__item {
+    text-align: center;
+    max-width: max-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .professionals__inner {
+    flex-wrap: wrap;
+  }
+  .professionals__item {
+    margin-bottom: 30px;
+  }
+  .covid img {
+    display: none;
+  }
+}
+
+@media(max-width: 768px) {
+  .video__link img {
+    width: 200px;
+    height: 200px;
+    transform: translateY(25%);
+  }
+  .video__image {
+    width: 500px;
+    height: 285px;
+  }
+  .professionals__title {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .professionals .service__link {
+    margin-left: 0;
+    padding: 15px;
+  }
+  .professionals__item {
+    max-width: max-content;
+    margin: 0 auto 30px;
+  }
+  .covid__info {
+    padding: 70px;
+  }
+  .covid__title {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .covid__text {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
+
+@media(max-width: 570px) {
+  .video__inner {
+    display: block;
+    max-width: max-content;
+    margin: 0 auto;
+  }
+  .video__item {
+    margin-bottom: 20px;
+  }
+  .video__image {
+    width: 300px;
+    height: 170px;
+  }
+  .video__link img {
+    width: 80px;
+    height: 80px;
+  }
+  .professionals__top {
+    display: block;
+  }
+  .professionals__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 480px) {
+  .menu--active {
+    top: 75px;
+    left: 43%;
+  }
+  .hero__content {
+    display: block;
+  }
+  .hero__title {
+    font-size: 37px;
+    line-height: 47px;
+    margin-bottom: 17px;
+  }
+  .hero__text {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .hero__link {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 37px;
+    line-height: 47px;
+    margin-bottom: 17px;
+  }
+  .service__text, .video__text {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .service__buttons .service__link, 
+  .service__buttons .hero__link {
+    display: block;
+    margin-left: 0;
+  }
+  .covid__phone {
+    display: none;
+  }
+  .covid__title {
+    font-size: 27px;
+    line-height: 36px;
+  }
+  .covid__info {
+    padding: 30px;
+  }
 }
