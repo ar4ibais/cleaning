@@ -53,6 +53,10 @@ a {
   color: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 21px;
   line-height: 30px;
@@ -785,6 +789,23 @@ body {
     margin-left: 0;
     margin-top: 40px;
   }
+  .home__img {
+    width: 500px;
+    height: 600px;
+  }
+  .blog__item {
+    width: 450px;
+    height: 600px;
+  }
+  .footer__top {
+    flex-wrap: wrap;
+  }
+  .footer__social,
+  .footer__contacts,
+  .footer__hours,
+  .footer__phone {
+    margin-bottom: 30px;
+  }
 }
 
 @media(max-width: 1150px) {
@@ -812,6 +833,14 @@ body {
     width: 400px;
     height: 720px;
   } 
+  .benefits__img {
+    width: 500px;
+    height: 500px;
+  }
+  .contacts__form {
+    padding: 60px 40px;
+    margin-left: 40px;
+  }
 }
 
 @media(max-width: 992px) {
@@ -834,6 +863,9 @@ body {
   }
   .menu__list {
     display: block;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 16px;
   }
   .menu {
     height: 150px;
@@ -854,6 +886,7 @@ body {
   .professionals,
   .covid,
   .home,
+  .benefits,
   .blog,
   .contacts {
     margin-bottom: 100px;
@@ -881,6 +914,55 @@ body {
   }
   .covid img {
     display: none;
+  }
+  .home__img {
+    display: none;
+  }
+  .benefits__inner {
+    display: block;
+  }
+  .benefits__img {
+    display: none;
+  }
+  .benefits__info {
+    text-align: center;
+  }
+  .benefits__stats {
+    max-width: 100%;
+  }
+  .blog__bottom {
+    display: block;
+  }
+  .blog__item {
+    max-width: max-content;
+    margin: 0 auto 20px;
+  }
+  .blog__top {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .blog__info {
+    max-width: max-content;
+    margin: 0 auto 20px;
+  }
+  .service__buttons .hero__link {
+    display: inline-block;
+  }
+  .blog__item {
+    width: auto;
+    height: auto;
+  }
+  .contacts__inner {
+    display: block;
+  }
+  .contacts__info {
+    margin-bottom: 30px;
+  }
+  .contacts__form {
+    margin-left: 0;
+  }
+  .contacts__area {
+    width: 100%;
   }
 }
 
@@ -917,6 +999,41 @@ body {
     font-size: 16px;
     margin-bottom: 25px;
   }
+  .home__title,
+  .benefits__title,
+  .blog__title,
+  .contacts__title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .home__text,
+  .benefits__text,
+  .blog__text,
+  .contacts__text {
+    font-size: 16px;
+  }
+  .benefits {
+    padding-bottom: 70px;
+  }
+  .contacts__form {
+    padding: 40px 25px;
+  }
+  .contacts__form-inner {
+    display: block;
+  }
+  .contacts__input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer__top {
+    margin-bottom: 80px;
+  }
+  .footer__bottom {
+    display: block;
+  }
+  .footer__bottom-info {
+    display: block;
+  }
 }
 
 @media(max-width: 570px) {
@@ -941,6 +1058,19 @@ body {
   }
   .professionals__title {
     margin-bottom: 20px;
+  }
+  .home__rooms {
+    display: block;
+  }
+  .home__room {
+    margin-bottom: 20px;
+  }
+  .home__info {
+    padding: 20px;
+  }
+  .blog__item-info {
+    padding: 20px;
+    width: auto;
   }
 }
 
@@ -988,5 +1118,26 @@ body {
   }
   .covid__info {
     padding: 30px;
+  }
+  .home__title {
+    font-size: 27px;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+  .home__room {
+    font-size: 16px;
+  }
+  .benefits__stats {
+    display: block;
+  }
+  .benefits__stat {
+    max-width: max-content;
+    margin: 0 auto;
+  }
+  .blog__item-title {
+    font-size: 20px;
+  }
+  .blog__item-text {
+    font-size: 16px;
   }
 }
